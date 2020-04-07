@@ -1,0 +1,1656 @@
+2020-03-08 23:45:58 [scrapy.utils.log] INFO: Scrapy 1.8.0 started (bot: douban_book)
+2020-03-08 23:45:58 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 01:54:44) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-08 23:45:58 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'douban_book', 'DOWNLOAD_DELAY': 3, 'FEED_FORMAT': 'csv', 'FEED_URI': 'bookInfo.csv', 'LOG_FILE': 'log.log', 'NEWSPIDER_MODULE': 'douban_book.spiders', 'SPIDER_MODULES': ['douban_book.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}
+2020-03-08 23:45:58 [scrapy.extensions.telnet] INFO: Telnet Password: a9d94b0b205484ef
+2020-03-08 23:45:59 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-08 23:46:00 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-08 23:46:00 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-08 23:46:00 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-03-08 23:46:00 [scrapy.core.engine] INFO: Spider opened
+2020-03-08 23:46:00 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-08 23:46:00 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-03-08 23:46:01 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://book.douban.com/top250> from <GET http://book.douban.com/top250>
+2020-03-08 23:46:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://book.douban.com/top250> (referer: None)
+2020-03-08 23:46:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://book.douban.com/top250?start=25> (referer: https://book.douban.com/top250)
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '[美] 哈珀·李',
+ 'edition_year': '译林出版社',
+ 'name': '杀死一只知更鸟',
+ 'price': '2012-9',
+ 'publisher': '高红梅',
+ 'ratings': '9.2'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '[美] 斯蒂芬·金',
+ 'edition_year': '人民文学出版社',
+ 'name': '肖申克的救赎',
+ 'price': '2006-7',
+ 'publisher': '施寄青',
+ 'ratings': '9.1'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '大仲马',
+ 'edition_year': '上海译文出版社',
+ 'name': '基督山伯爵',
+ 'price': '1991-12-1',
+ 'publisher': '周克希',
+ 'ratings': '9.0'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '钱穆',
+ 'edition_year': '2001',
+ 'name': '中国历代政治得失',
+ 'price': '12.00元',
+ 'publisher': '生活·读书·新知三联书店',
+ 'ratings': '9.2'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '[美] 卡勒德·胡赛尼',
+ 'edition_year': '上海人民出版社',
+ 'name': '追风筝的人',
+ 'price': '2006-5',
+ 'publisher': '李继宏',
+ 'ratings': '8.9'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '[英] 阿加莎·克里斯蒂',
+ 'edition_year': '人民文学出版社',
+ 'name': '东方快车谋杀案',
+ 'price': '2006-5',
+ 'publisher': '陈尧光',
+ 'ratings': '9.0'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '[美] 黄仁宇',
+ 'edition_year': '1997-5',
+ 'name': '万历十五年',
+ 'price': '18.00元',
+ 'publisher': '生活·读书·新知三联书店',
+ 'ratings': '8.9'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '[日] 东野圭吾',
+ 'edition_year': '南海出版公司',
+ 'name': '嫌疑人X的献身',
+ 'price': '2008-9',
+ 'publisher': '刘子倩',
+ 'ratings': '8.9'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '杨显惠',
+ 'edition_year': '2008-09',
+ 'name': '夹边沟记事',
+ 'price': '34.00元',
+ 'publisher': '花城出版社',
+ 'ratings': '9.2'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '[美] 彼得·海斯勒',
+ 'edition_year': '上海译文出版社',
+ 'name': '寻路中国',
+ 'price': '2011-1',
+ 'publisher': '李雪顺',
+ 'ratings': '9.0'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '[英]毛姆',
+ 'edition_year': '上海译文出版社',
+ 'name': '刀锋',
+ 'price': '2007-3',
+ 'publisher': '周煦良',
+ 'ratings': '9.0'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '[美] 彼得·海斯勒',
+ 'edition_year': '上海译文出版社',
+ 'name': '江城',
+ 'price': '2012-1',
+ 'publisher': '李雪顺',
+ 'ratings': '9.0'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '鲁迅',
+ 'edition_year': '1973年3月',
+ 'name': '呐喊',
+ 'price': '0.36元',
+ 'publisher': '人民文学出版社',
+ 'ratings': '8.9'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '金庸',
+ 'edition_year': '1999-04',
+ 'name': '射雕英雄传（全四册）',
+ 'price': '47.00元',
+ 'publisher': '生活·读书·新知三联书店',
+ 'ratings': '9.0'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '[美]乔治·R.R.马丁',
+ 'edition_year': '重庆出版社',
+ 'name': '冰与火之歌',
+ 'price': '2013-10-1',
+ 'publisher': '谭光磊',
+ 'ratings': '9.5'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '[英] 奥斯丁',
+ 'edition_year': '人民文学出版社',
+ 'name': '傲慢与偏见',
+ 'price': '1993-7',
+ 'publisher': '张玲',
+ 'ratings': '8.8'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '林海音 文',
+ 'edition_year': '2003-7',
+ 'name': '城南旧事',
+ 'price': '16.00元',
+ 'publisher': '中国青年出版社',
+ 'ratings': '9.0'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '费孝通',
+ 'edition_year': '2006-4',
+ 'name': '乡土中国',
+ 'price': '38.00',
+ 'publisher': '上海人民出版社',
+ 'ratings': '9.2'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '王小波',
+ 'edition_year': '1999-3',
+ 'name': '黄金时代',
+ 'price': '19.00元',
+ 'publisher': '花城出版社',
+ 'ratings': '8.8'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '[德国]格林兄弟',
+ 'edition_year': '人民文学出版社',
+ 'name': '格林童话全集',
+ 'price': '1994-11',
+ 'publisher': '魏以新',
+ 'ratings': '9.0'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '林达',
+ 'edition_year': '1997-5',
+ 'name': '历史深处的忧虑',
+ 'price': '19.00元',
+ 'publisher': '生活·读书·新知三联书店',
+ 'ratings': '9.0'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '[意] 埃莱娜·费兰特',
+ 'edition_year': '人民文学出版社',
+ 'name': '新名字的故事',
+ 'price': '2017-4',
+ 'publisher': '陈英',
+ 'ratings': '9.0'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '史铁生',
+ 'edition_year': '2002-5',
+ 'name': '我与地坛',
+ 'price': '25.00元',
+ 'publisher': '春风文艺出版社',
+ 'ratings': '9.0'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '[英] 阿加莎・克里斯蒂',
+ 'edition_year': '人民文学出版社',
+ 'name': '无人生还',
+ 'price': '2008-3',
+ 'publisher': '祁阿红',
+ 'ratings': '8.9'}
+2020-03-08 23:46:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=25>
+{'author': '[意] 埃莱娜·费兰特',
+ 'edition_year': '人民文学出版社',
+ 'name': '失踪的孩子',
+ 'price': '2018-6-1',
+ 'publisher': '陈英',
+ 'ratings': '9.1'}
+2020-03-08 23:46:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://book.douban.com/top250> (referer: https://book.douban.com/top250)
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '[清] 曹雪芹 著',
+ 'edition_year': '1996-12',
+ 'name': '红楼梦',
+ 'price': '59.70元',
+ 'publisher': '人民文学出版社',
+ 'ratings': '9.6'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '余华',
+ 'edition_year': '2012-8-1',
+ 'name': '活着',
+ 'price': '20.00元',
+ 'publisher': '作家出版社',
+ 'ratings': '9.4'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '[哥伦比亚] 加西亚·马尔克斯',
+ 'edition_year': '南海出版公司',
+ 'name': '百年孤独',
+ 'price': '2011-6',
+ 'publisher': '范晔',
+ 'ratings': '9.2'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '[英] 乔治·奥威尔',
+ 'edition_year': '北京十月文艺出版社',
+ 'name': '1984',
+ 'price': '2010-4-1',
+ 'publisher': '刘绍铭',
+ 'ratings': '9.3'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '[美国] 玛格丽特·米切尔',
+ 'edition_year': '译林出版社',
+ 'name': '飘',
+ 'price': '2000-9',
+ 'publisher': '李美华',
+ 'ratings': '9.3'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '刘慈欣',
+ 'edition_year': '2012-1-1',
+ 'name': '三体全集',
+ 'price': '168.00元',
+ 'publisher': '重庆出版社',
+ 'ratings': '9.4'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '[明] 罗贯中',
+ 'edition_year': '1998-05',
+ 'name': '三国演义（全二册）',
+ 'price': '39.50元',
+ 'publisher': '人民文学出版社',
+ 'ratings': '9.2'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '[日] 东野圭吾',
+ 'edition_year': '南海出版公司',
+ 'name': '白夜行',
+ 'price': '2013-1-1',
+ 'publisher': '刘姿君',
+ 'ratings': '9.2'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '[英] 阿·柯南道尔',
+ 'edition_year': '群众出版社',
+ 'name': '福尔摩斯探案全集（上中下）',
+ 'price': '1981-8',
+ 'publisher': '丁钟华 等',
+ 'ratings': '9.2'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '[英] 乔治·奥威尔',
+ 'edition_year': '上海译文出版社',
+ 'name': '动物农场',
+ 'price': '2007-3',
+ 'publisher': '荣如德',
+ 'ratings': '9.2'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '[法] 圣埃克苏佩里',
+ 'edition_year': '人民文学出版社',
+ 'name': '小王子',
+ 'price': '2003-8',
+ 'publisher': '马振聘',
+ 'ratings': '9.0'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '林奕含',
+ 'edition_year': '2018-1',
+ 'name': '房思琪的初恋乐园',
+ 'price': '45.00元',
+ 'publisher': '北京联合出版公司',
+ 'ratings': '9.2'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '金庸',
+ 'edition_year': '1994-5',
+ 'name': '天龙八部',
+ 'price': '96.0',
+ 'publisher': '生活.读书.新知三联书店',
+ 'ratings': '9.1'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '（丹麦）安徒生',
+ 'edition_year': '人民文学出版社',
+ 'name': '安徒生童话故事集',
+ 'price': '1997-08',
+ 'publisher': '叶君健',
+ 'ratings': '9.2'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '三毛',
+ 'edition_year': '2003-8',
+ 'name': '撒哈拉的故事',
+ 'price': '15.80元',
+ 'publisher': '哈尔滨出版社',
+ 'ratings': '9.2'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': 'J.K.罗琳 (J.K.Rowling)',
+ 'edition_year': '2008-12-1',
+ 'name': '哈利•波特',
+ 'price': '498.00元',
+ 'publisher': '人民文学出版社',
+ 'ratings': '9.7'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '钱锺书',
+ 'edition_year': '1991-2',
+ 'name': '围城',
+ 'price': '19.00',
+ 'publisher': '人民文学出版社',
+ 'ratings': '8.9'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '[以色列] 尤瓦尔·赫拉利',
+ 'edition_year': '中信出版社',
+ 'name': '人类简史',
+ 'price': '2014-11',
+ 'publisher': '林俊宏',
+ 'ratings': '9.1'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '王小波',
+ 'edition_year': '1997-10',
+ 'name': '沉默的大多数',
+ 'price': '27.00元',
+ 'publisher': '中国青年出版社',
+ 'ratings': '9.1'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '[哥伦比亚] 加西亚·马尔克斯',
+ 'edition_year': '南海出版公司',
+ 'name': '霍乱时期的爱情',
+ 'price': '2012-9-1',
+ 'publisher': '杨玲',
+ 'ratings': '9.0'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '路遥',
+ 'edition_year': '2005-1',
+ 'name': '平凡的世界（全三部）',
+ 'price': '64.00元',
+ 'publisher': '人民文学出版社',
+ 'ratings': '9.0'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '[法] 阿尔贝·加缪',
+ 'edition_year': '上海译文出版社',
+ 'name': '局外人',
+ 'price': '2010-8',
+ 'publisher': '柳鸣九',
+ 'ratings': '9.0'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '当年明月',
+ 'edition_year': '2009-4',
+ 'name': '明朝那些事儿（1-9）',
+ 'price': '358.20元',
+ 'publisher': '中国海关出版社',
+ 'ratings': '9.1'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '金庸',
+ 'edition_year': '1994-5',
+ 'name': '笑傲江湖（全四册）',
+ 'price': '76.80元',
+ 'publisher': '生活·读书·新知三联书店',
+ 'ratings': '9.0'}
+2020-03-08 23:46:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250>
+{'author': '[英] 毛姆',
+ 'edition_year': '上海译文出版社',
+ 'name': '月亮和六便士',
+ 'price': '2006-8',
+ 'publisher': '傅惟慈',
+ 'ratings': '9.0'}
+2020-03-08 23:46:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://book.douban.com/top250?start=225> (referer: https://book.douban.com/top250)
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '海明威',
+ 'edition_year': '上海译文出版社',
+ 'name': '老人与海',
+ 'price': '1999-10',
+ 'publisher': '吴劳',
+ 'ratings': '8.4'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '[美] 安东尼·刘易斯',
+ 'edition_year': '北京大学出版社',
+ 'name': '批评官员的尺度',
+ 'price': '2011-7',
+ 'publisher': '何帆',
+ 'ratings': '8.9'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '[白俄] S. A. 阿列克谢耶维奇',
+ 'edition_year': '中信出版集团',
+ 'name': '二手时间',
+ 'price': '2016-1',
+ 'publisher': '吕宁思',
+ 'ratings': '8.8'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '任东来',
+ 'edition_year': '2014-1',
+ 'name': '美国宪政历程',
+ 'price': '35.00元',
+ 'publisher': '中国法制出版社',
+ 'ratings': '9.1'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '[日] 三岛由纪夫',
+ 'edition_year': '上海译文出版社',
+ 'name': '金阁寺',
+ 'price': '2009-1',
+ 'publisher': '唐月梅',
+ 'ratings': '8.7'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '[英] 阿瑟·克拉克',
+ 'edition_year': '上海人民出版社',
+ 'name': '2001太空漫游',
+ 'price': '2007-11',
+ 'publisher': '郝明义',
+ 'ratings': '9.1'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '鲁迅',
+ 'edition_year': '1973-12-01',
+ 'name': '故事新编',
+ 'price': '0.31 元',
+ 'publisher': '人民文学出版社',
+ 'ratings': '9.2'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '[英] 莎士比亚',
+ 'edition_year': '人民文学出版社',
+ 'name': '哈姆莱特',
+ 'price': '2001-1',
+ 'publisher': '朱生豪',
+ 'ratings': '8.6'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '[美] 卡森·麦卡勒斯',
+ 'edition_year': '上海三联书店',
+ 'name': '心是孤独的猎手',
+ 'price': '2005-8',
+ 'publisher': '陈笑黎',
+ 'ratings': '8.5'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '老舍',
+ 'edition_year': '2000-3-1',
+ 'name': '骆驼祥子',
+ 'price': '12.00',
+ 'publisher': '人民文学出版社',
+ 'ratings': '8.4'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '[美] 尼尔·波兹曼',
+ 'edition_year': '广西师范大学出版社',
+ 'name': '娱乐至死',
+ 'price': '2011-6',
+ 'publisher': '章艳',
+ 'ratings': '8.5'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '阿来',
+ 'edition_year': '1998-3-1',
+ 'name': '尘埃落定',
+ 'price': '22.0',
+ 'publisher': '人民文学出版社',
+ 'ratings': '8.5'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '[法国] 儒尔·凡尔纳',
+ 'edition_year': '译林出版社',
+ 'name': '海底两万里',
+ 'price': '2002-9',
+ 'publisher': '沈国华',
+ 'ratings': '8.5'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '严歌苓',
+ 'edition_year': '2008-4',
+ 'name': '小姨多鹤',
+ 'price': '28.00元',
+ 'publisher': '作家出版社',
+ 'ratings': '8.6'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '(捷克) 赫拉巴尔',
+ 'edition_year': '北京十月文艺出版社',
+ 'name': '过于喧嚣的孤独',
+ 'price': '2011-10',
+ 'publisher': '杨乐云',
+ 'ratings': '8.8'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '桐华',
+ 'edition_year': '2010-04',
+ 'name': '那些回不去的年少时光·终场',
+ 'price': '23.80元',
+ 'publisher': '江苏文艺出版社',
+ 'ratings': '8.7'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '[美] 理查德·格里格',
+ 'edition_year': '人民邮电出版社',
+ 'name': '心理学与生活',
+ 'price': '2003-10',
+ 'publisher': '王垒',
+ 'ratings': '8.8'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '（英）勃朗特',
+ 'edition_year': '人民文学出版社',
+ 'name': '呼啸山庄',
+ 'price': '1999-01-01',
+ 'publisher': '张扬',
+ 'ratings': '8.4'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '[法] 米歇尔·福柯',
+ 'edition_year': '生活·读书·新知三联书店',
+ 'name': '规训与惩罚',
+ 'price': '2003-1',
+ 'publisher': '刘北成',
+ 'ratings': '9.2'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '林达',
+ 'edition_year': '2002-5',
+ 'name': '带一本书去巴黎',
+ 'price': '35.00元',
+ 'publisher': '生活·读书·新知三联书店',
+ 'ratings': '8.5'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': 'Elliot Aronson',
+ 'edition_year': '华东师范大学出版社',
+ 'name': '社会性动物',
+ 'price': '2007-12',
+ 'publisher': '邢占军',
+ 'ratings': '9.1'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '[英] 阿道司·赫胥黎',
+ 'edition_year': '重庆出版社',
+ 'name': '美丽新世界',
+ 'price': '2005-6',
+ 'publisher': '王波',
+ 'ratings': '8.6'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '古龙',
+ 'edition_year': '2005-8',
+ 'name': '陆小凤传奇',
+ 'price': '94.00元',
+ 'publisher': '珠海出版社',
+ 'ratings': '8.7'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '[法]托克维尔',
+ 'edition_year': '商务印书馆',
+ 'name': '论美国的民主',
+ 'price': '1989-1-1',
+ 'publisher': '董果良',
+ 'ratings': '9.2'}
+2020-03-08 23:46:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=225>
+{'author': '[美] 斯科特·菲茨杰拉德',
+ 'edition_year': '南海出版公司',
+ 'name': '了不起的盖茨比',
+ 'price': '2012-5',
+ 'publisher': '邓若虚',
+ 'ratings': '8.7'}
+2020-03-08 23:46:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://book.douban.com/top250?start=200> (referer: https://book.douban.com/top250)
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '[美] 罗伯特·西奥迪尼',
+ 'edition_year': '中国人民大学出版社',
+ 'name': '影响力',
+ 'price': '2006-5',
+ 'publisher': '陈叙',
+ 'ratings': '8.6'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '[美] 埃里克·霍弗',
+ 'edition_year': '广西师范大学出版社',
+ 'name': '狂热分子',
+ 'price': '2011-6',
+ 'publisher': '梁永安',
+ 'ratings': '9.0'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '[德] 帕·聚斯金德',
+ 'edition_year': '上海译文出版社',
+ 'name': '香水',
+ 'price': '2005-5',
+ 'publisher': '李清华',
+ 'ratings': '8.5'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '(葡)若泽·萨拉马戈',
+ 'edition_year': '南海出版公司',
+ 'name': '失明症漫记',
+ 'price': '2014-2',
+ 'publisher': '范维信',
+ 'ratings': '9.0'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '三毛',
+ 'edition_year': '2009-3',
+ 'name': '稻草人手记',
+ 'price': '18.00元',
+ 'publisher': '北京十月文艺出版社',
+ 'ratings': '8.9'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '[美] E.B.怀特',
+ 'edition_year': '上海译文出版社',
+ 'name': '夏洛的网',
+ 'price': '2004-5',
+ 'publisher': '任溶溶',
+ 'ratings': '8.6'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '[美] 特德·姜',
+ 'edition_year': '译林出版社',
+ 'name': '你一生的故事',
+ 'price': '2015-5',
+ 'publisher': '李克勤',
+ 'ratings': '8.6'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '孙通海 译注',
+ 'edition_year': '中华书局',
+ 'name': '庄子',
+ 'price': '2007-04',
+ 'publisher': '方勇 译注',
+ 'ratings': '9.4'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '三浦紫苑',
+ 'edition_year': '广西师范大学出版社',
+ 'name': '强风吹拂',
+ 'price': '2015-1-1',
+ 'publisher': '林佩瑾',
+ 'ratings': '9.0'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '[日] 岛田洋七',
+ 'edition_year': '南海出版公司',
+ 'name': '佐贺的超级阿嬷',
+ 'price': '2007-3',
+ 'publisher': '陈宝莲',
+ 'ratings': '8.7'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '[日] 村上春树',
+ 'edition_year': '上海译文出版社',
+ 'name': '挪威的森林',
+ 'price': '2007-7',
+ 'publisher': '林少华',
+ 'ratings': '8.5'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '[日]凑佳苗',
+ 'edition_year': '哈尔滨出版社',
+ 'name': '告白',
+ 'price': '2010年6月',
+ 'publisher': '丁世佳',
+ 'ratings': '8.5'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '[日] 是枝裕和',
+ 'edition_year': '北京联合出版公司',
+ 'name': '步履不停',
+ 'price': '2017-5',
+ 'publisher': '郑有杰',
+ 'ratings': '8.7'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '古龙',
+ 'edition_year': '2005-8',
+ 'name': '欢乐英雄',
+ 'price': '28.00元',
+ 'publisher': '珠海出版社',
+ 'ratings': '8.8'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '(英)弗里德利希·奥古斯特·哈耶克',
+ 'edition_year': '中国社会科学出版社',
+ 'name': '通往奴役之路',
+ 'price': '1997-08-01',
+ 'publisher': '王明毅',
+ 'ratings': '8.8'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '[奥] 斯蒂芬·茨威格',
+ 'edition_year': '广西师范大学出版社',
+ 'name': '人类的群星闪耀时',
+ 'price': '2004-8',
+ 'publisher': '舒昌善',
+ 'ratings': '8.7'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '汤显祖',
+ 'edition_year': '1963-4-1',
+ 'name': '牡丹亭',
+ 'price': '14.50',
+ 'publisher': '人民文学出版社',
+ 'ratings': '9.0'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '[德]赫尔曼·黑塞',
+ 'edition_year': '上海译文出版社',
+ 'name': '荒原狼',
+ 'price': '2008-7',
+ 'publisher': '赵登荣',
+ 'ratings': '9.0'}
+2020-03-08 23:46:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=200>
+{'author': '古龙',
+ 'edition_year': '1991-12-01',
+ 'name': '多情剑客无情剑(上、中、下)',
+ 'price': '49.8',
+ 'publisher': '海天出版社',
+ 'ratings': '8.7'}
+2020-03-08 23:46:19 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.douban.com/top250?start=200> (referer: https://book.douban.com/top250)
+Traceback (most recent call last):
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\黄湛伟\Desktop\爬虫总结笔记\scrapy\Learn\douban_book\douban_book\spiders\douban.py", line 33, in parse_page
+    book['price'] = book_info_contents[3]
+IndexError: list index out of range
+2020-03-08 23:46:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://book.douban.com/top250?start=175> (referer: https://book.douban.com/top250)
+2020-03-08 23:46:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=175>
+{'author': '纳训',
+ 'edition_year': '2003-01',
+ 'name': '一千零一夜',
+ 'price': '22.0',
+ 'publisher': '人民文学出版社',
+ 'ratings': '8.7'}
+2020-03-08 23:46:23 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.douban.com/top250?start=175> (referer: https://book.douban.com/top250)
+Traceback (most recent call last):
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\core\spidermw.py", line 84, in evaluate_iterable
+    for r in iterable:
+  File "C:\Users\黄湛伟\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\LocalCache\local-packages\Python37\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Users\黄湛伟\Desktop\爬虫总结笔记\scrapy\Learn\douban_book\douban_book\spiders\douban.py", line 33, in parse_page
+    book['price'] = book_info_contents[3]
+IndexError: list index out of range
+2020-03-08 23:46:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://book.douban.com/top250?start=150> (referer: https://book.douban.com/top250)
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '[美] 丹尼尔·凯斯',
+ 'edition_year': '广西师范大学出版社',
+ 'name': '献给阿尔吉侬的花束',
+ 'price': '2015-4',
+ 'publisher': '陈澄和',
+ 'ratings': '9.0'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '何兆武 口述',
+ 'edition_year': '2006-8',
+ 'name': '上学记',
+ 'price': '19.80元',
+ 'publisher': '生活·读书·新知三联书店',
+ 'ratings': '8.9'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '金庸',
+ 'edition_year': '1999-04',
+ 'name': '倚天屠龙记(共四册)',
+ 'price': '47.00',
+ 'publisher': '三联书店',
+ 'ratings': '8.6'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '李碧华',
+ 'edition_year': '1999-1',
+ 'name': '霸王别姬',
+ 'price': '10.20元',
+ 'publisher': '人民文学出版社',
+ 'ratings': '9.1'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '[美] 戴维·迈尔斯',
+ 'edition_year': '人民邮电出版社',
+ 'name': '社会心理学',
+ 'price': '2006-1',
+ 'publisher': '张智勇',
+ 'ratings': '9.0'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '[巴西] 保罗·柯艾略',
+ 'edition_year': '南海出版公司',
+ 'name': '牧羊少年奇幻之旅',
+ 'price': '2009-3-1',
+ 'publisher': '丁文林',
+ 'ratings': '8.6'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '老舍',
+ 'edition_year': '2008-07',
+ 'name': '四世同堂',
+ 'price': '36.00元',
+ 'publisher': '北京十月文艺出版社',
+ 'ratings': '9.3'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '顾城',
+ 'edition_year': '1998-12',
+ 'name': '顾城的诗',
+ 'price': '20.00',
+ 'publisher': '人民文学出版社',
+ 'ratings': '8.8'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '[阿根廷] 豪·路·博尔赫斯',
+ 'edition_year': '上海译文出版社',
+ 'name': '小径分岔的花园',
+ 'price': '2015-7',
+ 'publisher': '王永年',
+ 'ratings': '8.9'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '刘震云',
+ 'edition_year': '2009-3',
+ 'name': '一句顶一万句',
+ 'price': '29.80',
+ 'publisher': '长江文艺出版社',
+ 'ratings': '8.7'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': 'S.A.阿列克谢耶维奇',
+ 'edition_year': '花城出版社/铁葫芦图书',
+ 'name': '我不知道该说什么，关于死亡还是爱情',
+ 'price': '2014-6-15',
+ 'publisher': '方祖芳',
+ 'ratings': '9.0'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '于娟',
+ 'edition_year': '2011-5',
+ 'name': '此生未完成',
+ 'price': '26.00元',
+ 'publisher': '湖南科技出版社',
+ 'ratings': '8.9'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '宗萨蒋扬钦哲仁波切',
+ 'edition_year': '中国友谊出版公司',
+ 'name': '正见',
+ 'price': '2007-1',
+ 'publisher': '姚仁喜',
+ 'ratings': '8.8'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '阿城',
+ 'edition_year': '1999-10',
+ 'name': '棋王',
+ 'price': '13.00',
+ 'publisher': '作家出版社',
+ 'ratings': '8.7'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '[美] 罗伯特·麦基',
+ 'edition_year': '天津人民出版社',
+ 'name': '故事',
+ 'price': '2014-9-1',
+ 'publisher': '周铁东',
+ 'ratings': '9.2'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '三毛',
+ 'edition_year': '2007-7',
+ 'name': '雨季不再来',
+ 'price': '28.00元',
+ 'publisher': '北京十月文艺出版社',
+ 'ratings': '8.7'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '汪曾祺',
+ 'edition_year': '1987-10',
+ 'name': '受戒',
+ 'price': '3.95元',
+ 'publisher': '漓江出版社',
+ 'ratings': '9.2'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '[美] 路易斯·贾内梯',
+ 'edition_year': '世界图书出版公司',
+ 'name': '认识电影',
+ 'price': '2007-11',
+ 'publisher': '焦雄屏',
+ 'ratings': '8.9'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '曹禺',
+ 'edition_year': '1999-05',
+ 'name': '雷雨',
+ 'price': '9.20',
+ 'publisher': '人民文学出版社',
+ 'ratings': '8.6'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '[美] G. 伽莫夫',
+ 'edition_year': '科学出版社',
+ 'name': '从一到无穷大',
+ 'price': '2002-11',
+ 'publisher': '暴永宁 译',
+ 'ratings': '9.1'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '[古希腊] 柏拉图',
+ 'edition_year': '商务印书馆',
+ 'name': '理想国',
+ 'price': '1986-8',
+ 'publisher': '郭斌和',
+ 'ratings': '8.7'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '[明] 施耐庵',
+ 'edition_year': '1997-1',
+ 'name': '水浒传（全二册）',
+ 'price': '50.60元',
+ 'publisher': '人民文学出版社',
+ 'ratings': '8.6'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '[美] Paul Graham',
+ 'edition_year': '人民邮电出版社',
+ 'name': '黑客与画家',
+ 'price': '2011-4',
+ 'publisher': '阮一峰',
+ 'ratings': '8.7'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '[美] 安迪·威尔',
+ 'edition_year': '译林出版社',
+ 'name': '火星救援',
+ 'price': '2015-10',
+ 'publisher': '陈灼',
+ 'ratings': '8.9'}
+2020-03-08 23:46:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=150>
+{'author': '齐邦媛',
+ 'edition_year': '2010-10',
+ 'name': '巨流河',
+ 'price': '39.00元',
+ 'publisher': '生活·读书·新知三联书店',
+ 'ratings': '8.7'}
+2020-03-08 23:46:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://book.douban.com/top250?start=125> (referer: https://book.douban.com/top250)
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '都梁',
+ 'edition_year': '2005-3',
+ 'name': '亮剑',
+ 'price': '28.00元',
+ 'publisher': '解放军文艺出版社',
+ 'ratings': '8.9'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '吴晓波',
+ 'edition_year': '2008-7-1',
+ 'name': '激荡三十年',
+ 'price': '32.00元',
+ 'publisher': '中信出版社',
+ 'ratings': '8.6'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '米兰·昆德拉',
+ 'edition_year': '上海译文出版社',
+ 'name': '不能承受的生命之轻',
+ 'price': '2010-8',
+ 'publisher': '许钧',
+ 'ratings': '8.8'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '王小波',
+ 'edition_year': '2009-1',
+ 'name': '绿毛水怪',
+ 'price': '30.00元',
+ 'publisher': '时代文艺出版社',
+ 'ratings': '9.0'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '[英] 道格拉斯·亚当斯',
+ 'edition_year': '四川科学技术出版社',
+ 'name': '银河系漫游指南',
+ 'price': '2005-6',
+ 'publisher': '徐百柯',
+ 'ratings': '8.8'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '张爱玲',
+ 'edition_year': '2006-12',
+ 'name': '半生缘',
+ 'price': '28.00元',
+ 'publisher': '北京十月文艺出版社',
+ 'ratings': '8.6'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '[美] 欧·亨利',
+ 'edition_year': '上海社会科学院出版社',
+ 'name': '麦琪的礼物',
+ 'price': '2003-7',
+ 'publisher': '张经浩',
+ 'ratings': '8.6'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '[美] 欧文·斯通',
+ 'edition_year': '北京十月文艺出版社',
+ 'name': '渴望生活',
+ 'price': '2008-4',
+ 'publisher': '常涛',
+ 'ratings': '9.2'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '[美] 贾雷德·戴蒙德',
+ 'edition_year': '上海世纪出版集团',
+ 'name': '枪炮、病菌与钢铁',
+ 'price': '2006-4-1',
+ 'publisher': '谢延光',
+ 'ratings': '8.8'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '(英)W.萨默塞特·毛姆',
+ 'edition_year': '重庆',
+ 'name': '面纱',
+ 'price': '2012-05-01',
+ 'publisher': '阮景林',
+ 'ratings': '8.7'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '李娟',
+ 'edition_year': '2010-7-1',
+ 'name': '我的阿勒泰',
+ 'price': '22.00元',
+ 'publisher': '云南人民出版社',
+ 'ratings': '8.8'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '吴楚材',
+ 'edition_year': '1987-1-1',
+ 'name': '古文观止',
+ 'price': '21.00元',
+ 'publisher': '中华书局',
+ 'ratings': '9.1'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '刘瑜',
+ 'edition_year': '2009-6',
+ 'name': '民主的细节',
+ 'price': '25.00',
+ 'publisher': '上海三联书店',
+ 'ratings': '8.6'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '三毛',
+ 'edition_year': '2007-5',
+ 'name': '温柔的夜',
+ 'price': '28.00元',
+ 'publisher': '北京十月文艺出版社',
+ 'ratings': '9.1'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '[英] 阿加莎·克里斯蒂',
+ 'edition_year': '人民文学出版社',
+ 'name': '尼罗河上的惨案',
+ 'price': '2006-5',
+ 'publisher': '宫英海',
+ 'ratings': '8.7'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '[英] 吉米·哈利',
+ 'edition_year': '中国城市出版社',
+ 'name': '万物有灵且美',
+ 'price': '2010-1',
+ 'publisher': '种衍伦',
+ 'ratings': '8.8'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '李娟',
+ 'edition_year': '2010-6',
+ 'name': '阿勒泰的角落',
+ 'price': '25.00元',
+ 'publisher': '万卷出版公司',
+ 'ratings': '9.1'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '林达',
+ 'edition_year': '2004-08',
+ 'name': '总统是靠不住的',
+ 'price': '21.80',
+ 'publisher': '生活·读书·新知三联书店',
+ 'ratings': '8.8'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '[意] 埃莱娜·费兰特',
+ 'edition_year': '人民文学出版社',
+ 'name': '离开的，留下的',
+ 'price': '2017-10',
+ 'publisher': '陈英',
+ 'ratings': '8.7'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '八月长安',
+ 'edition_year': '2013-8-5',
+ 'name': '最好的我们',
+ 'price': '55',
+ 'publisher': '湖南文艺出版社',
+ 'ratings': '8.7'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '[澳] 考琳·麦卡洛',
+ 'edition_year': '译林出版社',
+ 'name': '荆棘鸟',
+ 'price': '1998-7',
+ 'publisher': '曾胡',
+ 'ratings': '8.6'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '[德] 赫尔曼·黑塞',
+ 'edition_year': '上海人民出版社',
+ 'name': '德米安',
+ 'price': '2009-3',
+ 'publisher': '丁君君',
+ 'ratings': '9.0'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '(美) 斯塔夫里阿诺斯',
+ 'edition_year': '北京大学出版社',
+ 'name': '全球通史',
+ 'price': '2012-2-1',
+ 'publisher': '吴象婴',
+ 'ratings': '9.1'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '茅海建',
+ 'edition_year': '2005-7',
+ 'name': '天朝的崩溃',
+ 'price': '32.00元',
+ 'publisher': '生活·读书·新知三联书店',
+ 'ratings': '9.1'}
+2020-03-08 23:46:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=125>
+{'author': '[日]芥川龙之介',
+ 'edition_year': '上海译文出版社',
+ 'name': '罗生门',
+ 'price': '2008-7',
+ 'publisher': '林少华',
+ 'ratings': '8.7'}
+2020-03-08 23:46:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://book.douban.com/top250?start=100> (referer: https://book.douban.com/top250)
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '錢穆',
+ 'edition_year': '2013-8',
+ 'name': '國史大綱（上下）',
+ 'price': '76.00元',
+ 'publisher': '商務印書館',
+ 'ratings': '9.3'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '[德] 阿图尔·叔本华',
+ 'edition_year': '上海人民出版社',
+ 'name': '人生的智慧',
+ 'price': '2008-10',
+ 'publisher': '韦启昌',
+ 'ratings': '9.2'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '[美] 沃尔特·艾萨克森',
+ 'edition_year': '中信出版社',
+ 'name': '史蒂夫·乔布斯传',
+ 'price': '2011-10-24',
+ 'publisher': '管延圻',
+ 'ratings': '8.7'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '李泽厚',
+ 'edition_year': '2009-1-1',
+ 'name': '美的历程',
+ 'price': '43.00元',
+ 'publisher': '生活·读书·新知三联书店',
+ 'ratings': '9.2'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '[美] 艾·弗洛姆',
+ 'edition_year': '上海译文出版社',
+ 'name': '爱的艺术',
+ 'price': '2008-4',
+ 'publisher': '李健鸣',
+ 'ratings': '8.8'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '[美] 塔拉·韦斯特弗',
+ 'edition_year': '南海出版公司',
+ 'name': '你当像鸟飞往你的山',
+ 'price': '2019-10-20',
+ 'publisher': '任爱红',
+ 'ratings': '9.0'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '林达',
+ 'edition_year': '2004-08',
+ 'name': '我也有一个梦想',
+ 'price': '25.00元',
+ 'publisher': '生活·读书·新知三联书店',
+ 'ratings': '9.0'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '[挪] 乔斯坦·贾德',
+ 'edition_year': '作家出版社',
+ 'name': '苏菲的世界',
+ 'price': '2007-10',
+ 'publisher': '萧宝森',
+ 'ratings': '8.8'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '刘瑜',
+ 'edition_year': '2010-1',
+ 'name': '送你一颗子弹',
+ 'price': '25.00元',
+ 'publisher': '上海三联书店',
+ 'ratings': '8.6'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '鲁迅',
+ 'edition_year': '1973年3月',
+ 'name': '彷徨',
+ 'price': '0.37元',
+ 'publisher': '人民文学出版社',
+ 'ratings': '8.9'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '（清）沈复',
+ 'edition_year': '1999-1',
+ 'name': '浮生六记',
+ 'price': '5.70元',
+ 'publisher': '人民文学出版社',
+ 'ratings': '8.8'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '江南',
+ 'edition_year': '2015-10',
+ 'name': '九州·缥缈录',
+ 'price': '198.00元',
+ 'publisher': '人民文学出版社',
+ 'ratings': '8.9'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '龙应台',
+ 'edition_year': '2008-12',
+ 'name': '亲爱的安德烈',
+ 'price': '26.00',
+ 'publisher': '人民文学出版社',
+ 'ratings': '8.6'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '三毛',
+ 'edition_year': '2003-08',
+ 'name': '万水千山走遍',
+ 'price': '13.80',
+ 'publisher': '哈尔滨出版社',
+ 'ratings': '8.8'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '龙应台',
+ 'edition_year': '2009-10',
+ 'name': '目送',
+ 'price': '39.00元',
+ 'publisher': '生活·读书·新知三联书店',
+ 'ratings': '8.6'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '鲁迅',
+ 'edition_year': '1973-3',
+ 'name': '野草',
+ 'price': '0.20元',
+ 'publisher': '人民文学出版社',
+ 'ratings': '9.3'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '龙应台',
+ 'edition_year': '2005-8',
+ 'name': '野火集',
+ 'price': '25.00元',
+ 'publisher': '文汇出版社',
+ 'ratings': '8.8'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '[日] 岩井俊二',
+ 'edition_year': '天津人民出版社',
+ 'name': '情书',
+ 'price': '2004-7',
+ 'publisher': '穆晓芳',
+ 'ratings': '8.6'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '[奥] 斯蒂芬·茨威格',
+ 'edition_year': '广西师范大学出版社',
+ 'name': '昨日的世界',
+ 'price': '2004-5-1',
+ 'publisher': '舒昌善',
+ 'ratings': '9.2'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '刘慈欣',
+ 'edition_year': '2005-6',
+ 'name': '球状闪电',
+ 'price': '22.00元',
+ 'publisher': '四川科学技术出版社',
+ 'ratings': '8.7'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '[美] 曼昆',
+ 'edition_year': '机械工业出版社',
+ 'name': '经济学原理（上下）',
+ 'price': '2003-8',
+ 'publisher': '梁小民',
+ 'ratings': '9.1'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '(法)阿尔贝·加缪',
+ 'edition_year': '上海译文出版社',
+ 'name': '鼠疫',
+ 'price': '2013-8',
+ 'publisher': '刘方',
+ 'ratings': '9.1'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '张爱玲',
+ 'edition_year': '2006-12',
+ 'name': '倾城之恋',
+ 'price': '29.80元',
+ 'publisher': '北京十月文艺出版社',
+ 'ratings': '8.7'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '白先勇',
+ 'edition_year': '2010.10',
+ 'name': '孽子',
+ 'price': '46.00元',
+ 'publisher': '广西师范大学出版社',
+ 'ratings': '9.1'}
+2020-03-08 23:46:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=100>
+{'author': '[日] 东野圭吾',
+ 'edition_year': '南海出版公司',
+ 'name': '解忧杂货店',
+ 'price': '2014-5',
+ 'publisher': '李盈春',
+ 'ratings': '8.5'}
+2020-03-08 23:46:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://book.douban.com/top250?start=75> (referer: https://book.douban.com/top250)
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '[德] 赫尔曼·黑塞',
+ 'edition_year': '上海人民出版社',
+ 'name': '悉达多',
+ 'price': '2009-3',
+ 'publisher': '杨玉功 译',
+ 'ratings': '9.0'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '黄元吉',
+ 'edition_year': '1996-10',
+ 'name': '道德经精义',
+ 'price': '4.50元',
+ 'publisher': '陕西人民出版社',
+ 'ratings': '9.4'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '[瑞典] 弗雷德里克·巴克曼',
+ 'edition_year': '四川文艺出版社',
+ 'name': '一个叫欧维的男人决定去死',
+ 'price': '2015-12',
+ 'publisher': '宁蒙',
+ 'ratings': '9.0'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '[美]马里奥·普佐',
+ 'edition_year': '译林出版社',
+ 'name': '教父',
+ 'price': '1997-8',
+ 'publisher': '周汉林',
+ 'ratings': '9.0'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '[意大利]伊塔洛·卡尔维诺',
+ 'edition_year': '译林出版社',
+ 'name': '看不见的城市',
+ 'price': '2006-8',
+ 'publisher': '张宓',
+ 'ratings': '8.8'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '萧红',
+ 'edition_year': '2005-01',
+ 'name': '呼兰河传',
+ 'price': '19.00',
+ 'publisher': '百花文艺出版社',
+ 'ratings': '8.9'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '海子',
+ 'edition_year': '1999-04',
+ 'name': '海子的诗',
+ 'price': '15.40',
+ 'publisher': '人民文学出版社',
+ 'ratings': '8.9'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '[美] 阿图·葛文德（Atul Gawande）',
+ 'edition_year': '浙江人民出版社',
+ 'name': '最好的告别',
+ 'price': '2015-7-31',
+ 'publisher': '彭小华',
+ 'ratings': '9.0'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '金庸',
+ 'edition_year': '2008-3',
+ 'name': '鹿鼎记（全五册）',
+ 'price': '108.00元',
+ 'publisher': '广州出版社 花城出版社',
+ 'ratings': '8.8'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '三毛',
+ 'edition_year': '2007-6',
+ 'name': '梦里花落知多少',
+ 'price': '28.00元',
+ 'publisher': '北京十月文艺出版社',
+ 'ratings': '8.8'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '[印] 罗宾德拉纳德·泰戈尔',
+ 'edition_year': '哈尔滨出版社',
+ 'name': '飞鸟集',
+ 'price': '2004-6',
+ 'publisher': '徐翰林',
+ 'ratings': '8.9'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '[美] 约翰·威廉斯',
+ 'edition_year': '上海人民出版社',
+ 'name': '斯通纳',
+ 'price': '2016-1',
+ 'publisher': '杨向荣',
+ 'ratings': '8.8'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '[英] 毛姆',
+ 'edition_year': '上海译文出版社',
+ 'name': '人生的枷锁',
+ 'price': '2007-3',
+ 'publisher': '张柏然',
+ 'ratings': '9.0'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '鲁迅',
+ 'edition_year': '1972年4月',
+ 'name': '朝花夕拾',
+ 'price': '0.25元',
+ 'publisher': '人民文学出版社',
+ 'ratings': '8.8'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '蘅塘退士',
+ 'edition_year': '1998-1-1',
+ 'name': '唐诗三百首',
+ 'price': '0.65',
+ 'publisher': '中华书局',
+ 'ratings': '9.3'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '沈从文',
+ 'edition_year': '2002-4',
+ 'name': '边城',
+ 'price': '12.00元',
+ 'publisher': '北岳文艺出版社',
+ 'ratings': '8.7'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '[英] 阿加莎·克里斯蒂',
+ 'edition_year': '人民文学出版社',
+ 'name': '罗杰疑案',
+ 'price': '2006-5',
+ 'publisher': '张江云',
+ 'ratings': '8.9'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '[日] 伊坂幸太郎',
+ 'edition_year': '译林出版社',
+ 'name': '金色梦乡',
+ 'price': '2010-9',
+ 'publisher': '李彦桦',
+ 'ratings': '9.0'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '[英] 史蒂芬·霍金',
+ 'edition_year': '湖南科学技术出版社',
+ 'name': '时间简史',
+ 'price': '2010-4',
+ 'publisher': '许明贤',
+ 'ratings': '8.8'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '[奥] 斯台芬·茨威格',
+ 'edition_year': '上海译文出版社',
+ 'name': '一个陌生女人的来信',
+ 'price': '2007-7',
+ 'publisher': '张玉书',
+ 'ratings': '8.7'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '[英] 王尔德',
+ 'edition_year': '译林出版社',
+ 'name': '王尔德童话',
+ 'price': '2003-6',
+ 'publisher': '王林',
+ 'ratings': '9.1'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '严歌苓',
+ 'edition_year': '2011-10',
+ 'name': '陆犯焉识',
+ 'price': '35.00元',
+ 'publisher': '作家出版社',
+ 'ratings': '8.8'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '[美] 孔飞力',
+ 'edition_year': '生活·读书·新知三联书店 上海三联书店',
+ 'name': '叫魂',
+ 'price': '2012-5',
+ 'publisher': '陈兼',
+ 'ratings': '9.0'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '李娟',
+ 'edition_year': '2012-6',
+ 'name': '冬牧场',
+ 'price': '29.80元',
+ 'publisher': '新星出版社',
+ 'ratings': '9.0'}
+2020-03-08 23:46:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=75>
+{'author': '龙应台',
+ 'edition_year': '2009-12-1',
+ 'name': '孩子你慢慢来',
+ 'price': '28.00元',
+ 'publisher': '生活·读书·新知三联书店',
+ 'ratings': '8.8'}
+2020-03-08 23:46:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://book.douban.com/top250?start=50> (referer: https://book.douban.com/top250)
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '木心 讲述',
+ 'edition_year': '2013-1-10',
+ 'name': '文学回忆录（全2册）',
+ 'price': '98.00元',
+ 'publisher': '广西师范大学出版社',
+ 'ratings': '9.2'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '金庸',
+ 'edition_year': '生活·读书·新知三联书店',
+ 'name': '神雕侠侣',
+ 'price': '1994-5',
+ 'publisher': '有1996年11月北平第4次印本',
+ 'ratings': '8.9'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '曹天元',
+ 'edition_year': '2006-1',
+ 'name': '上帝掷骰子吗',
+ 'price': '32.00元',
+ 'publisher': '辽宁教育出版社',
+ 'ratings': '9.2'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '司马迁',
+ 'edition_year': '中华书局',
+ 'name': '史记（全十册）',
+ 'price': '1982-11',
+ 'publisher': '（索引）司马贞，（正义）张守节',
+ 'ratings': '9.5'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '[法] 雨果',
+ 'edition_year': '人民文学出版社',
+ 'name': '悲惨世界（上中下）',
+ 'price': '1992-6',
+ 'publisher': '李丹',
+ 'ratings': '9.0'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '柴静',
+ 'edition_year': '2013-1-1',
+ 'name': '看见',
+ 'price': '39.80元',
+ 'publisher': '广西师范大学出版社',
+ 'ratings': '8.8'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '余华',
+ 'edition_year': '1998-9',
+ 'name': '许三观卖血记',
+ 'price': '16.80元',
+ 'publisher': '南海出版公司',
+ 'ratings': '8.8'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '三毛',
+ 'edition_year': '2003-6',
+ 'name': '哭泣的骆驼',
+ 'price': '15.80元',
+ 'publisher': '哈尔滨出版社',
+ 'ratings': '8.9'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '吴军',
+ 'edition_year': '2011-8',
+ 'name': '浪潮之巅',
+ 'price': '55.00元',
+ 'publisher': '电子工业出版社',
+ 'ratings': '9.0'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '[英] 贡布里希 (Sir E.H.Gombrich)',
+ 'edition_year': '广西美术出版社',
+ 'name': '艺术的故事',
+ 'price': '2008-04',
+ 'publisher': '范景中',
+ 'ratings': '9.6'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '[美] 卡勒德·胡赛尼',
+ 'edition_year': '上海人民出版社',
+ 'name': '灿烂千阳',
+ 'price': '2007-9',
+ 'publisher': '李继宏',
+ 'ratings': '8.8'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '陈忠实',
+ 'edition_year': '2012-9',
+ 'name': '白鹿原',
+ 'price': '39.00元',
+ 'publisher': '人民文学出版社',
+ 'ratings': '9.2'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '[俄] 费奥多尔·陀思妥耶夫斯基',
+ 'edition_year': '上海译文出版社',
+ 'name': '卡拉马佐夫兄弟',
+ 'price': '2006-8',
+ 'publisher': '荣如德',
+ 'ratings': '9.4'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '[意大利]伊塔洛·卡尔维诺',
+ 'edition_year': '译林出版社',
+ 'name': '树上的男爵',
+ 'price': '2012-4-1',
+ 'publisher': '吴正仪',
+ 'ratings': '9.1'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '王小波',
+ 'edition_year': '2008-5',
+ 'name': '爱你就像爱生命',
+ 'price': '18.00元',
+ 'publisher': '上海锦绣文章出版社',
+ 'ratings': '8.8'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '[美] 傅高义',
+ 'edition_year': '生活·读书·新知三联书店',
+ 'name': '邓小平时代',
+ 'price': '2013-1',
+ 'publisher': '冯克利',
+ 'ratings': '9.1'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '[日] 黑柳彻子 著',
+ 'edition_year': '南海出版公司',
+ 'name': '窗边的小豆豆',
+ 'price': '2003-1',
+ 'publisher': '赵玉皎',
+ 'ratings': '8.7'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '王国维',
+ 'edition_year': '1998-12-01',
+ 'name': '人间词话',
+ 'price': '9.80元',
+ 'publisher': '上海古籍出版社',
+ 'ratings': '9.0'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '[美] 艾萨克·阿西莫夫',
+ 'edition_year': '江苏凤凰文艺出版社',
+ 'name': '永恒的终结',
+ 'price': '2014-9-1',
+ 'publisher': '崔正男',
+ 'ratings': '9.0'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '杨绛',
+ 'edition_year': '2003-7',
+ 'name': '我们仨',
+ 'price': '18.80元',
+ 'publisher': '生活·读书·新知三联书店',
+ 'ratings': '8.7'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '白先勇',
+ 'edition_year': '2010-10',
+ 'name': '台北人',
+ 'price': '38.00元',
+ 'publisher': '广西师范大学出版社',
+ 'ratings': '8.9'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '吴念真',
+ 'edition_year': '2011-9',
+ 'name': '这些人，那些事',
+ 'price': '28.00元',
+ 'publisher': '译林出版社',
+ 'ratings': '8.8'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '[英] 肯·福莱特',
+ 'edition_year': '江苏凤凰文艺出版社',
+ 'name': '巨人的陨落',
+ 'price': '2016-5-1',
+ 'publisher': '于大卫',
+ 'ratings': '8.9'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '孔丘 编订',
+ 'edition_year': '2006-7',
+ 'name': '诗经',
+ 'price': '19.90元',
+ 'publisher': '北京出版社',
+ 'ratings': '9.4'}
+2020-03-08 23:46:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://book.douban.com/top250?start=50>
+{'author': '吴承恩',
+ 'edition_year': '人民文学出版社',
+ 'name': '西游记（全二册）',
+ 'price': '2004-8',
+ 'publisher': '黄肃秋 注释',
+ 'ratings': '8.9'}
+2020-03-08 23:46:42 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-03-08 23:46:42 [scrapy.extensions.feedexport] INFO: Stored csv feed (220 items) in: bookInfo.csv
+2020-03-08 23:46:42 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4275,
+ 'downloader/request_count': 12,
+ 'downloader/request_method_count/GET': 12,
+ 'downloader/response_bytes': 107174,
+ 'downloader/response_count': 12,
+ 'downloader/response_status_count/200': 11,
+ 'downloader/response_status_count/301': 1,
+ 'elapsed_time_seconds': 41.74478,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 8, 15, 46, 42, 446109),
+ 'item_scraped_count': 220,
+ 'log_count/DEBUG': 232,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 11,
+ 'request_depth_max': 1,
+ 'response_received_count': 11,
+ 'scheduler/dequeued': 12,
+ 'scheduler/dequeued/memory': 12,
+ 'scheduler/enqueued': 12,
+ 'scheduler/enqueued/memory': 12,
+ 'spider_exceptions/IndexError': 2,
+ 'start_time': datetime.datetime(2020, 3, 8, 15, 46, 0, 701329)}
+2020-03-08 23:46:42 [scrapy.core.engine] INFO: Spider closed (finished)
